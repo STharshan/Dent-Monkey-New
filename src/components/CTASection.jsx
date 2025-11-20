@@ -16,14 +16,22 @@ export default function CTASection() {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             {/* Primary Button */}
-            <button className="bg-black text-white px-7 py-4 rounded-lg font-semibold text-[16px] hover:bg-[#222222] transition-colors">
-              Get Free Quote
-            </button>
+            <a
+              href="#contact"
+            >
+              <button className="bg-black  text-white px-7 py-4 rounded-lg font-semibold text-[16px] hover:bg-[#222222] transition-colors">
+                Get Free Quote
+              </button>
+            </a>
 
             {/* Secondary Button */}
-            <button className="border border-[#6F6F6F] bg-white text-black px-7 py-4 rounded-lg font-semibold text-[16px] hover:bg-[#F5F5F5] transition-colors">
-              Call Now: (555) 123-4567
-            </button>
+            <a
+              href="tel:07775397007"
+            >
+              <button className="border border-[#6F6F6F] hover:bg-gray-300 bg-white text-black px-7 py-4 rounded-lg font-semibold text-[16px] transition-colors">
+                Call Now: 07775397007
+              </button>
+            </a>
           </div>
         </div>
       </div>

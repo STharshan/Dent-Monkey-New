@@ -23,7 +23,8 @@ export default function ContactSection() {
               <div>
                 <h3 className="text-[24px] font-medium text-black mb-2">Address</h3>
                 <p className="text-[16px] text-[#6F6F6F]">
-                  123 Auto Street, San Francisco, CA 94105
+                  Unit 14, Broxtowe Park Business Centre Calverton Drive,
+Strelley, Nottingham NG8 6QP, United Kingdom
                 </p>
               </div>
 
@@ -31,10 +32,10 @@ export default function ContactSection() {
               <div>
                 <h3 className="text-[24px] font-medium text-black mb-2">Phone</h3>
                 <a
-                  href="tel:+1-555-123-4567"
+                  href="tel:07775397007"
                   className="text-[18px] text-black font-semibold hover:opacity-80"
                 >
-                  +1 (555) 123-4567
+                  07775397007
                 </a>
               </div>
 
@@ -42,8 +43,8 @@ export default function ContactSection() {
               <div>
                 <h3 className="text-[24px] font-medium text-black mb-2">Hours</h3>
                 <div className="text-[16px] text-[#6F6F6F] space-y-1">
-                  <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
-                  <p>Saturday: 9:00 AM - 4:00 PM</p>
+                  <p>Monday - Friday: 7:00 AM - 6:00 PM</p>
+                  <p>Saturday: 8:00 AM - 2:00 PM</p>
                   <p>Sunday: Closed</p>
                 </div>
               </div>

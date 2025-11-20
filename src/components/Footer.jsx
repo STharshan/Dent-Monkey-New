@@ -77,19 +77,25 @@ export default function Footer() {
                         <h4 className="text-[24px] font-medium text-white mb-4">Contact</h4>
                         <ul className="space-y-2 text-[#6F6F6F] text-[16px]">
                             <li>
-                                <a href="tel:5551234567" className="hover:text-white transition-colors">
-                                    (555) 123-4567
+                                <a href="tel:07775397007" target="_blank" className="hover:text-white transition-colors">
+                                    07775397007
                                 </a>
                             </li>
                             <li>
-                                <a href="mailto:info@dentmonkey.com" className="hover:text-white transition-colors">
+                                <a href="mailto:info@dentmonkey.com" target="_blank" className="hover:text-white transition-colors">
                                     info@dentmonkey.com
                                 </a>
                             </li>
                             <li>
-                                123 Main Street
-                                <br />
-                                Anytown, ST 12345
+                                <a
+                                    href="https://maps.app.goo.gl/zfEjJqpf1DrrLhNz5"
+                                    className="hover:text-white transition-colors"
+                                    target="_blank"
+                                >
+                                    Unit 14, Broxtowe Park Business Centre Calverton Drive,
+                                    <br />
+                                    Strelley, Nottingham NG8 6QP, United Kingdom
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -133,6 +139,6 @@ export default function Footer() {
                     </p>
                 </div>
             </div>
-    </footer >
-  );
+        </footer >
+    );
 }

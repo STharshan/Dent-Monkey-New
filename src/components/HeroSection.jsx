@@ -37,17 +37,21 @@ export default function HeroSection() {
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               {/* Primary Button */}
-              <button className="bg-black text-white text-[16px] font-semibold px-7 py-4 rounded-lg">
-                Get Free Quote
-              </button>
+              <a
+                href="#contact"
+              >
+                <button className="bg-black text-white text-[16px] hover:bg-gray-900 font-semibold px-7 py-4 rounded-lg">
+                  Get Free Quote
+                </button>
+              </a>
 
               {/* Secondary Button */}
               <a
                 href="#services"
               >
-              <button className="bg-white text-black border border-[#6F6F6F] text-[16px] font-medium px-7 py-4 rounded-lg">
-                Learn More
-              </button>
+                <button className="bg-white text-black border hover:bg-gray-300 border-[#6F6F6F] text-[16px] font-medium px-7 py-4 rounded-lg">
+                  Learn More
+                </button>
               </a>
             </div>
 
