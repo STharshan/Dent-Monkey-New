@@ -3,30 +3,12 @@ import React, { useState } from "react";
 const categories = ["All", "Hail Damage", "Dents", "Creases"];
 
 const galleryItems = [
-  {
-    title: "Hail Damage Repair 1",
-    category: "Hail Damage",
-  },
-  {
-    title: "Door Ding Repair",
-    category: "Dents",
-  },
-  {
-    title: "Hail Damage Repair 2",
-    category: "Hail Damage",
-  },
-  {
-    title: "Crease Removal",
-    category: "Creases",
-  },
-  {
-    title: "Panel Damage Repair",
-    category: "Dents",
-  },
-  {
-    title: "Hail Damage Repair 3",
-    category: "Hail Damage",
-  },
+  { title: "Hail Damage Repair 1", category: "Hail Damage" },
+  { title: "Door Ding Repair", category: "Dents" },
+  { title: "Hail Damage Repair 2", category: "Hail Damage" },
+  { title: "Crease Removal", category: "Creases" },
+  { title: "Panel Damage Repair", category: "Dents" },
+  { title: "Hail Damage Repair 3", category: "Hail Damage" },
 ];
 
 export default function GallerySection() {
@@ -38,15 +20,15 @@ export default function GallerySection() {
       : galleryItems.filter((item) => item.category === active);
 
   return (
-    <section id="gallery" className="w-full py-20 sm:py-32 bg-white">
+    <section id="gallery" className="w-full py-20 sm:py-32 bg-white dark:bg-gray-900 transition-colors">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
         {/* Heading */}
         <div className="text-center mb-12">
-          <h2 className="text-[38px] font-semibold text-black mb-4">
+          <h2 className="text-[38px] font-semibold text-black dark:text-white mb-4 transition-colors">
             Before & After Gallery
           </h2>
-          <p className="text-[18px] text-[#6F6F6F] max-w-2xl mx-auto">
+          <p className="text-[18px] text-gray-700 dark:text-gray-300 max-w-2xl mx-auto transition-colors">
             See the quality and precision of our paintless dent removal work.
           </p>
         </div>
@@ -57,11 +39,11 @@ export default function GallerySection() {
             <button
               key={cat}
               onClick={() => setActive(cat)}
-              className={`px-6 py-2 rounded-lg font-semibold text-[16px] transition 
+              className={`px-6 py-2 rounded-lg font-semibold text-[16px] transition
                 ${
                   active === cat
-                    ? "bg-black text-white"
-                    : "bg-white text-black border border-[#6F6F6F]"
+                    ? "bg-black dark:bg-white text-white dark:text-black"
+                    : "bg-white dark:bg-gray-800 text-black dark:text-white border border-gray-400 dark:border-gray-600"
                 }`}
             >
               {cat}
@@ -74,33 +56,36 @@ export default function GallerySection() {
 
           {filtered.map((item, index) => (
             <div key={index} className="space-y-4">
+
+              {/* Title */}
               <div className="text-center mb-2">
-                <h3 className="text-[24px] font-medium text-black">
+                <h3 className="text-[24px] font-medium text-black dark:text-white transition-colors">
                   {item.title}
                 </h3>
               </div>
 
+              {/* Images */}
               <div className="grid grid-cols-2 gap-3">
                 {/* Before */}
-                <div className="relative h-60 rounded-lg overflow-hidden shadow-md group bg-[#F5F5F5]">
+                <div className="relative h-60 rounded-lg overflow-hidden shadow-md group bg-gray-100 dark:bg-gray-800 transition-colors">
                   <img
                     src="/placeholder-before.jpg"
                     alt={item.title + " Before"}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 flex items-center justify-center transition">
+                  <div className="absolute inset-0 bg-black/40 dark:bg-black/50 group-hover:bg-black/60 flex items-center justify-center transition">
                     <p className="text-white font-semibold text-sm">Before</p>
                   </div>
                 </div>
 
                 {/* After */}
-                <div className="relative h-60 rounded-lg overflow-hidden shadow-md group bg-[#F5F5F5]">
+                <div className="relative h-60 rounded-lg overflow-hidden shadow-md group bg-gray-100 dark:bg-gray-800 transition-colors">
                   <img
                     src="/placeholder-after.jpg"
                     alt={item.title + " After"}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 flex items-center justify-center transition">
+                  <div className="absolute inset-0 bg-black/40 dark:bg-black/50 group-hover:bg-black/60 flex items-center justify-center transition">
                     <p className="text-white font-semibold text-sm">After</p>
                   </div>
                 </div>

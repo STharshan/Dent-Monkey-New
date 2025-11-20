@@ -8,6 +8,7 @@ import TestimonialSection from '../components/TestimonialSection'
 import ContactSection from '../components/ContactSection'
 import MapSection from '../components/MapSection'
 import CTASection from '../components/CTASection'
+import BusinessSolutions from '../components/ServiceAni'
 
 const Home = () => {
   return (
@@ -15,13 +16,13 @@ const Home = () => {
       <HeroSection />
       <AboutSection />
       <ServicesSection />
+      <BusinessSolutions />
       <GallerySection />
       <ProcessSection />
       <TestimonialSection />
       <ContactSection />
       <MapSection />
       <CTASection />
-      
     </div>
   )
 }
