@@ -79,7 +79,7 @@ export default function TestimonialCarousel() {
   });
 
   return (
-    <section className="w-full py-20 sm:py-32 bg-white dark:bg-gray-900 transition-colors">
+    <section className="w-full py-20 sm:py-32 bg-white dark:bg-black transition-colors">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
         {/* Heading */}

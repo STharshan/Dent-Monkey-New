@@ -24,7 +24,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="w-full py-20 sm:py-32 bg-[#F5F5F5] dark:bg-gray-900 transition-colors">
+    <section id="contact" className="w-full py-20 sm:py-32 bg-[#F5F5F5] dark:bg-black transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="text-center mb-16">

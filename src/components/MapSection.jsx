@@ -1,6 +1,6 @@
 export default function MapSection() {
   return (
-    <section id="map" className="w-full py-20 sm:py-32 bg-white dark:bg-gray-900 transition-colors">
+    <section id="map" className="w-full py-20 sm:py-32 bg-white dark:bg-black transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Map */}

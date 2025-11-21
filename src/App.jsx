@@ -6,6 +6,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/Navbar";
 import Home from "./page/Home";
 import Footer from "./components/Footer";
+import Notigam from "./page/Notigam";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/nottingham" element={<Notigam /> } />
         {/* <Route path="/terms" element={<TermsConditions />} />
         <Route path="/privacy" element={<PrivacyPolicy />} /> */}
       </Routes>

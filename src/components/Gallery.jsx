@@ -20,7 +20,7 @@ export default function GallerySection() {
       : galleryItems.filter((item) => item.category === active);
 
   return (
-    <section id="gallery" className="w-full py-20 sm:py-32 bg-white dark:bg-gray-900 transition-colors">
+    <section id="gallery" className="w-full py-20 sm:py-32 bg-white dark:bg-black transition-colors">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
         {/* Heading */}

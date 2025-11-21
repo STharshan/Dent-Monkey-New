@@ -8,7 +8,8 @@ import TestimonialSection from '../components/TestimonialSection'
 import ContactSection from '../components/ContactSection'
 import MapSection from '../components/MapSection'
 import CTASection from '../components/CTASection'
-import BusinessSolutions from '../components/ServiceAni'
+import GetSection from '../components/Get'
+import ServicesAniSection from '../components/ServiceAni'
 
 const Home = () => {
   return (
@@ -16,7 +17,8 @@ const Home = () => {
       <HeroSection />
       <AboutSection />
       <ServicesSection />
-      <BusinessSolutions />
+      <ServicesAniSection />
+      <GetSection />
       <GallerySection />
       <ProcessSection />
       <TestimonialSection />

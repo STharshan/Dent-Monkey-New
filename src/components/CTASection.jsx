@@ -1,6 +1,6 @@
 export default function CTASection() {
   return (
-    <section className="w-full py-20 sm:py-32 bg-linear-to-r from-black to-gray-700 dark:from-gray-800 dark:to-gray-900 transition-colors">
+    <section className="w-full py-20 sm:py-32 bg-gray-700 dark:bg-black transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           {/* Heading */}
