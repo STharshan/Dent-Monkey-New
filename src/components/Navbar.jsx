@@ -1,10 +1,13 @@
 "use client";
 import React, { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { ChevronDown, ChevronUp, Menu, X } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const [locationOpen, setLocationOpen] = useState(false);
+  
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white dark:bg-black dark:border-gray-700">
@@ -37,7 +40,32 @@ export default function Header() {
           <a className="text-[16px] text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition font-medium" href="#contact">
             Contact
           </a>
+          <div className="relative">
+            <button
+              type="button"
+              onClick={() => setLocationOpen((prev) => !prev)}
+              className="flex items-center gap-1 text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white font-medium"
+            >
+              Location
+              {locationOpen ? (
+                <ChevronUp className="w-4 h-4" />
+              ) : (
+                <ChevronDown className="w-4 h-4" />
+              )}
+            </button>
 
+            {locationOpen && (
+              <div className="absolute right-0 mt-2 w-52 bg-white border border-gray-200 shadow-md rounded-md py-2 z-50">
+                <Link
+                  to="/nottingham"
+                  onClick={() => setLocationOpen(false)}
+                  className="block px-4 py-2 text-[#4B5563] hover:bg-[#F8FAFC] hover:text-[#0D1525] transition-colors"
+                >
+                  Nottingham
+                </Link>
+              </div>
+            )}
+          </div>
           {/* Theme Toggle */}
           <ThemeToggle className="ml-4" />
 
@@ -53,7 +81,7 @@ export default function Header() {
         <div className="flex items-center gap-2 md:hidden">
           <ThemeToggle />
           <button onClick={() => setOpen(!open)} aria-label="Toggle menu">
-            {open ? <X size={28} className="text-black dark:text-white"/> : <Menu size={28} className="text-black dark:text-white"/>}
+            {open ? <X size={28} className="text-black dark:text-white" /> : <Menu size={28} className="text-black dark:text-white" />}
           </button>
         </div>
       </nav>
@@ -76,6 +104,34 @@ export default function Header() {
           <a className="block text-[16px] text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition" href="#contact">
             Contact
           </a>
+          <div className="relative">
+            <button
+              type="button"
+              onClick={() => setLocationOpen((prev) => !prev)}
+              className="flex items-center gap-1 text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white"
+            >
+              Location
+              {locationOpen ? (
+                <ChevronUp className="w-4 h-4" />
+              ) : (
+                <ChevronDown className="w-4 h-4" />
+              )}
+            </button>
+
+            {locationOpen && (
+              <div className="absolute mt-2 w-52 bg-white border border-gray-200 shadow-md rounded-md py-2 z-50">
+                <Link
+                  to="/nottingham"
+                  onClick={() => {
+                    setLocationOpen(false);
+                  }}
+                  className="block px-4 py-2 text-[#4B5563] hover:bg-[#F8FAFC] hover:text-[#0D1525] transition-colors"
+                >
+                  Nottingham
+                </Link>
+              </div>
+            )}
+          </div>
 
           {/* Primary Button */}
           <button className="w-full bg-black dark:bg-white text-white dark:text-black text-[16px] font-semibold px-7 py-3 rounded-lg transition hover:bg-gray-800 dark:hover:bg-gray-200">
