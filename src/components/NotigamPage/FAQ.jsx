@@ -1,7 +1,9 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 
 export default function FAQSection() {
+  const [openIndex, setOpenIndex] = useState(null);
+
   const faqs = [
     {
       q: "How much does dent repair cost in Nottingham?",
@@ -29,6 +31,14 @@ export default function FAQSection() {
     },
   ];
 
+  const toggleAnswer = (index) => {
+    if (openIndex === index) {
+      setOpenIndex(null); // Close if the same FAQ is clicked
+    } else {
+      setOpenIndex(index); // Open the clicked FAQ
+    }
+  };
+
   return (
     <section className="py-20 lg:py-32 bg-[#FFFFFF]">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
@@ -48,14 +58,24 @@ export default function FAQSection() {
               className="bg-[#FFFFFF] border border-[#E0E0E0] rounded-xl shadow-sm p-6"
             >
               {/* Question */}
-              <h3 className="text-[20px] md:text-[24px] font-medium text-[#000000] mb-3">
-                {item.q}
-              </h3>
+              <div
+                className="flex justify-between items-center cursor-pointer"
+                onClick={() => toggleAnswer(index)}
+              >
+                <h3 className="text-[20px] md:text-[24px] font-medium text-[#000000] mb-3">
+                  {item.q}
+                </h3>
+                <span className="text-[24px] text-[#000000]">
+                  {openIndex === index ? "−" : "+"}
+                </span>
+              </div>
 
               {/* Answer */}
-              <p className="text-[16px] md:text-[18px] text-[#6F6F6F] leading-relaxed">
-                {item.a}
-              </p>
+              {openIndex === index && (
+                <p className="text-[16px] md:text-[18px] text-[#6F6F6F] leading-relaxed">
+                  {item.a}
+                </p>
+              )}
             </div>
           ))}
         </div>
