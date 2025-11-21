@@ -25,19 +25,19 @@ export default function Header() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-6">
-          <a className="text-[16px] text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition font-medium" href="#">
+          <a className="text-[16px] text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition font-medium" href="/#home">
             Home
           </a>
-          <a className="text-[16px] text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition font-medium" href="#about">
+          <a className="text-[16px] text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition font-medium" href="/#about">
             About
           </a>
-          <a className="text-[16px] text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition font-medium" href="#services">
+          <a className="text-[16px] text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition font-medium" href="/#services">
             Services
           </a>
-          <a className="text-[16px] text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition font-medium" href="#gallery">
+          <a className="text-[16px] text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition font-medium" href="/#gallery">
             Gallery
           </a>
-          <a className="text-[16px] text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition font-medium" href="#contact">
+          <a className="text-[16px] text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition font-medium" href="/#contact">
             Contact
           </a>
           <div className="relative">
@@ -89,19 +89,19 @@ export default function Header() {
       {/* Mobile Dropdown */}
       {open && (
         <div className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 px-4 py-4 space-y-4">
-          <a className="block text-[16px] text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition" href="#">
+          <a className="block text-[16px] text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition" href="/#home">
             Home
           </a>
-          <a className="block text-[16px] text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition" href="#about">
+          <a className="block text-[16px] text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition" href="/#about">
             About
           </a>
-          <a className="block text-[16px] text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition" href="#services">
+          <a className="block text-[16px] text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition" href="/#services">
             Services
           </a>
-          <a className="block text-[16px] text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition" href="#gallery">
+          <a className="block text-[16px] text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition" href="/#gallery">
             Gallery
           </a>
-          <a className="block text-[16px] text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition" href="#contact">
+          <a className="block text-[16px] text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition" href="/#contact">
             Contact
           </a>
           <div className="relative">

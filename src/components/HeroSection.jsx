@@ -3,7 +3,7 @@ import React from "react";
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full py-20 sm:py-32 overflow-hidden bg-black/50 dark:bg-black/70">
+    <section id="home" className="relative w-full py-20 sm:py-32 overflow-hidden bg-black/50 dark:bg-black/70">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"

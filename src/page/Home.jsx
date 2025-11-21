@@ -16,7 +16,7 @@ const Home = () => {
     <div>
       <HeroSection />
       <AboutSection />
-      <ServicesSection />
+      {/* <ServicesSection /> */}
       <ServicesAniSection />
       <GetSection />
       <GallerySection />
