@@ -7,11 +7,13 @@ export default function Footer() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
                     {/* Brand */}
                     <div>
-                        <div className="flex items-center gap-2 mb-4">
-                            <div className="h-10 w-10 rounded-full bg-white flex items-center justify-center text-black font-bold">
-                                DM
-                            </div>
-                            <span className="text-xl font-semibold text-white">Dent Monkey</span>
+                        <div className="flex justify-center bg-white mb-4 rounded-xl">
+                            {/* Logo Image */}
+                            <img
+                                src="/logo.png" // Replace with your logo path
+                                alt="Dent Monkey Logo"
+                                className="h-15 w-60 object-contain "
+                            />
                         </div>
                         <p className="text-[#6F6F6F] text-[16px]">
                             Professional paintless dent removal services for all vehicle types.

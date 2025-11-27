@@ -7,24 +7,24 @@ import { Link } from "react-router-dom";
 export default function Header() {
   const [open, setOpen] = useState(false);
   const [locationOpen, setLocationOpen] = useState(false);
-  
+
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white dark:bg-black dark:border-gray-700">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
 
         {/* Left Logo Section */}
         <div className="flex items-center gap-2">
-          <div className="h-10 w-10 rounded-full bg-black dark:bg-white flex items-center justify-center text-white dark:text-black font-bold">
-            DM
-          </div>
-          <span className="hidden sm:inline text-xl font-bold text-black dark:text-white">
-            Dent Monkey
-          </span>
+          {/* Logo Image */}
+          <img
+            src="/logo.png" // replace with your logo path
+            alt="Dent Monkey Logo"
+            className="h-20 w-60 object-contain"
+          />
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-6">
+        <div className="hidden lg:flex items-center gap-6">
           <a className="text-[16px] text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition font-medium" href="/#home">
             Home
           </a>
@@ -78,7 +78,7 @@ export default function Header() {
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="flex items-center gap-2 md:hidden">
+        <div className="flex items-center gap-2 lg:hidden">
           <ThemeToggle />
           <button onClick={() => setOpen(!open)} aria-label="Toggle menu">
             {open ? <X size={28} className="text-black dark:text-white" /> : <Menu size={28} className="text-black dark:text-white" />}
@@ -88,7 +88,7 @@ export default function Header() {
 
       {/* Mobile Dropdown */}
       {open && (
-        <div className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 px-4 py-4 space-y-4">
+        <div className="lg:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 px-4 py-4 space-y-4">
           <a className="block text-[16px] text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition" href="/#home">
             Home
           </a>
