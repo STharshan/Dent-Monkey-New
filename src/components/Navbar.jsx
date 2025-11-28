@@ -14,13 +14,22 @@ export default function Header() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
 
         {/* Left Logo Section */}
-        <div className="flex items-center gap-2">
-          {/* Logo Image */}
+        <div className="flex items-center p-2">
+          {/* Light Mode Logo */}
           <img
-            src="/logo.png" // replace with your logo path
+            src="/logo.png"          // light mode logo
             alt="Dent Monkey Logo"
-            className="h-20 w-60 object-contain"
+            className="h-20 w-40 object-contain dark:hidden"
           />
+
+          {/* Dark Mode Logo (white background) */}
+          <div className="flex justify-center bg-white w-50 h-20 mx-auto rounded-xl">
+            <img
+              src="/logo.png" // your white-bg dark mode logo
+              alt="Dent Monkey Logo Dark"
+              className="h-20 w-40 object-contain hidden dark:block"
+            />
+          </div>
         </div>
 
         {/* Desktop Menu */}
