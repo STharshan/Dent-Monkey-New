@@ -7,12 +7,12 @@ export default function Footer() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
                     {/* Brand */}
                     <div>
-                        <div className="flex justify-center bg-white mb-4 rounded-xl">
+                        <div className="flex justify-center bg-white mb-4 w-50 h-18 mx-auto rounded-xl">
                             {/* Logo Image */}
                             <img
                                 src="/logo.png" // Replace with your logo path
                                 alt="Dent Monkey Logo"
-                                className="h-15 w-60 object-contain "
+                                className="h-15 w-40 mt-2 object-contain "
                             />
                         </div>
                         <p className="text-[#6F6F6F] text-[16px]">
